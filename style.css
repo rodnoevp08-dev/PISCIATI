@@ -511,3 +511,22 @@ body::before{
     display:block;
   }
 }
+
+
+
+.event-thumb{
+  height:220px;
+  overflow:hidden; /* IMPORTANTISSIMO */
+  position:relative;
+}
+
+.event-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover; /* riempie senza deformare */
+  display:block;
+}
+
+.event-thumb img{
+  filter: contrast(1.3) brightness(0.9);
+}
