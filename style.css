@@ -443,8 +443,7 @@ body::before{
   font-weight:bold;
 }
 
-/* Mobile léger, sans changer le look PC */
-@media (max-width: 900px){
+@media (max-width: 980px){
   .hero-grid,
   .event-layout,
   .person-card,
@@ -455,9 +454,13 @@ body::before{
   .archive-grid{
     grid-template-columns:repeat(2, 1fr);
   }
+
+  .hero h1{
+    font-size:48px;
+  }
 }
 
-@media (max-width: 600px){
+@media (max-width: 560px){
   html, body{
     overflow-x:hidden;
   }
@@ -469,6 +472,7 @@ body::before{
 
   .menu{
     justify-content:flex-start;
+    width:100%;
   }
 
   .hero,
@@ -476,12 +480,8 @@ body::before{
     padding:0 10px;
   }
 
-  .hero-grid{
-    padding:12px;
-  }
-
-  .hero h1{
-    font-size:42px;
+  .archive-grid{
+    grid-template-columns:1fr;
   }
 
   .section-header{
@@ -490,18 +490,24 @@ body::before{
   }
 
   .section-header h2{
-    font-size:32px;
+    font-size:34px;
   }
 
-  .archive-grid{
-    grid-template-columns:1fr;
-  }
-
-  .event-main h3{
-    font-size:30px;
-  }
-
-  .event-date{
+  .logo{
     font-size:26px;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .marquee{
+    white-space:normal;
+  }
+
+  .marquee span{
+    animation:none;
+    padding-left:0;
+    display:block;
   }
 }
